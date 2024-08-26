@@ -6,6 +6,7 @@
 body{
 background-color: #ececec;
 font-family: 'Bebas Neue', sans-serif;
+
 }
 
 .botaonavbar{
@@ -15,11 +16,19 @@ font-family: 'Bebas Neue', sans-serif;
     border-radius: 18px;
     width: 100px;
 }
+
+.botaonavbarsair{
+    background-color: rgb(157, 14, 14);
+    color: white;
+    border: white 1px solid;
+    border-radius: 18px;
+    width: 100px;
+}
 .carousel {
     position: relative;
-    width: 800px;
-    height: 300px;
-    overflow: hidden;
+    width: 50vw;
+    height:50vh;
+    
 }
 
 .slide {
@@ -30,6 +39,7 @@ font-family: 'Bebas Neue', sans-serif;
     height: 100%;
     opacity: 0;
     transition: opacity 2s ease-in-out; 
+    padding-bottom: 50px;
 
 }
 
@@ -57,9 +67,55 @@ font-family: 'Bebas Neue', sans-serif;
 .centered-section {
     text-align: center;
     display: flex;
+    flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 40vh; 
+  margin-top: 50px;
+  }
+
+  /* Altera a fonte do calendário */
+input::-webkit-calendar-picker-indicator {
+    font-size: 16px;
+  }
   
-  margin: 65px;
+  /* Altera a cor do texto do calendário */
+  input::-webkit-datetime-edit {
+    color: #333;
+  }
+
+  .datapicker{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 30vh; 
+margin-top: 20px;
+  }
+
+  .criarconta{
+    padding-top: 250px;
+    padding-bottom: 50px;
+  }
+
+  .imagemcarrosel{
+ border-radius: 30px;
+ border: #0067a0 2px solid;
+  }
+
+  .agendamento{
+    width: 80vw;
+    background-color: #01426a5d;
+    margin: 50px 0 30px 0 ;
+  }
+ .paineis {
+    display: flex; /* Transforma a seção em um container flexbox */
+    justify-content: space-around; /* Distribui as divs igualmente no espaço disponível */
+  }
+  .painel{
+    background-color: #05304bb6;
+    height: 80vh;
+    width: 45vw;
+    margin-top: 20px;
+    border-radius: 15px;
   }

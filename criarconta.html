@@ -16,12 +16,12 @@
         <nav class="navbar navbar-expand-lg no-margin">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo" width="150px" height="50px"></a>
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto d-flex align-items-center">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="logar.html"><button class="btn btn-info botaonavbar">Logar</button></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><button class="btn btn-info botaonavbar">Criar Conta</button></a>
+                <a class="nav-link" href="criarconta.html"><button class="btn btn-info botaonavbar">Criar Conta</button></a>
               </li>
               <li class="nav-item">
                 <button id="toggle-dark-mode" class="btn btn-secondary">
@@ -36,7 +36,7 @@
     </header>
     
    <section class="centered-section" >
-    <div class="container">   
+    <div class="container criarconta"> 
 
         <div class="row justify-content-center">
             <div class="col-md-6">
@@ -45,30 +45,29 @@
                         Cadastro
                     </div>
                     <div class="card-body">
-                        <form>   
+                        <form>
 
                             <div class="mb-3">
                                 <label for="nome" class="form-label">Nome completo</label>
                                 <input type="text" class="form-control" id="nome" required>
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>   
+                                <label for="email" class="form-label">Email</label>
 
                                 <input type="email" class="form-control" id="email" required>
                             </div>
                             <div class="mb-3">
-                                <label for="senha"   
+                                <label for="senha" 
  class="form-label">Senha</label>
                                 <input type="password" class="form-control" id="senha" required>
-                            </div>   
+                            </div>  
 
                             <div class="mb-3">
                                 <label for="confirmarSenha" class="form-label">Confirmar senha</label>
-                                <input type="password" class="form-control" id="confirmarSenha"   
+                                <input type="password" class="form-control" id="confirmarSenha"
  required>
                             </div>
-                            <button type="submit" class="btn btn-primary">Criar   
- Conta</button>
+                            <button type="submit" class="btn btn-primary">Criar
                         </form>
                     </div>
                 </div>

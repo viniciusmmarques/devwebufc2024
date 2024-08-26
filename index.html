@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-lg no-margin">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo" width="150px" height="50px"></a>
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto d-flex align-items-center">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="logar.html"><button class="btn btn-info botaonavbar">Logar</button></a>
               </li>
@@ -27,7 +27,7 @@
                 <button id="toggle-dark-mode" class="btn btn-secondary">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
                     <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
-                    </svg></i>
+                    </svg>
                 </button>
              </li>
             </ul>
@@ -36,22 +36,28 @@
     </header>
     
    <section class="centered-section" >
+    <h1>serviços</h1>
     <div class="carousel">
         <div class="slide active">
-            <img src="cabelo.jpg" alt="Imagem 1">
+            <img src="cabelo.jpg" alt="Imagem 1" width="60%" height="100%" class="imagemcarrosel">
+            <br><br>
             <h5>Corte de cabelo</h5>
+
         </div>
         <div class="slide">
-            <img src="barba.jpg" alt="Imagem 2">
+            <img src="barba.jpg" alt="Imagem 2" width="60%" height="100%" class="imagemcarrosel">
+            <br><br>
             <h5>Design de barba</h5>
         </div>
         <div class="slide">
-            <img src="pintura.jpg" alt="Imagem 3">
+            <img src="pintura.jpg" alt="Imagem 3" width="60%" height="100%" class="imagemcarrosel"> 
+            <br><br>
             <h5>Pintura</h5>
         </div> 
         <div class="slide">
-            <img src="alisamento.jpg" alt="Imagem 3">
-            <h5>alisamento</h5>
+            <img src="alisamento.jpg" alt="Imagem 3" width="60%" height="100%" class="imagemcarrosel">
+            <br><br>
+            <h5 >alisamento</h5>
         </div> 
         
         <button class="prev" type="button" >
@@ -63,8 +69,18 @@
             <span class="visually-hidden">Next</span>
     </div>
    </section> 
+ 
    <section>
+    
+    <div class="datapicker">
 
+      <h1>Agendamentos</h1> 
+      <input type="date" name="data_nascimento" id="data_nascimento">
+      <div class="agendamento">
+        teste
+      </div>
+    </div>
+    
    </section>
 
     

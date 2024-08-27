@@ -27,10 +27,8 @@ font-family: 'Bebas Neue', sans-serif;
   cursor: pointer;
   border-radius: 5px;
 }
-.botaonavbar button a {
-  color: #fff;
-  text-decoration: none;
-}
+
+
 
 .botaonavbarsair{
     background-color: rgb(157, 14, 14);
@@ -38,6 +36,7 @@ font-family: 'Bebas Neue', sans-serif;
     border: white 1px solid;
     border-radius: 18px;
     width: 100px;
+    margin: 5px;
 }
 .carousel {
     position: relative;
@@ -173,9 +172,6 @@ padding-top: 20px;
     cursor: not-allowed;
   }
 
-  
-  
-  
 
 /* Títulos */
 .tittle h1, .tittle h4 {
@@ -208,7 +204,7 @@ padding-top: 20px;
 }
 
 .form-select, .form-control, .btn {
-  border-radius: 5px;
+  border-radius: 18px;
 }
 
 .confirm-button {

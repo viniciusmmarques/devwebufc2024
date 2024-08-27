@@ -1,0 +1,165 @@
+.bgnavbar{
+    background-color: #011521 !important;
+ 
+}
+
+body{
+background-color: #171616;
+font-family: 'Bebas Neue', sans-serif;
+color: white;
+
+}
+
+.botaonavbar{
+    background-color: #05080a;
+    color: white;
+    border: white 1px solid;
+    border-radius: 18px;
+    width: 100px;
+    margin: 5px;
+}
+
+.botaonavbarsair{
+    background-color: rgb(157, 14, 14);
+    color: white;
+    border: white 1px solid;
+    border-radius: 18px;
+    width: 100px;
+}
+.carousel {
+    position: relative;
+    width: 100vw;
+    height:100vh;
+    border-radius: 500px;
+
+
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out; 
+    padding-bottom: 50px;
+
+
+    
+
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 150%;
+    transform: translateY(-50%);  
+
+    background: #ebeaeaa2;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.prev {
+    left: 50px;
+}
+
+.next {
+    right: 50px;
+}
+.centered-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; 
+  margin-top: 50px;
+  
+  }
+
+  /* Altera a fonte do calendário */
+input::-webkit-calendar-picker-indicator {
+    font-size: 16px;
+  }
+  
+  /* Altera a cor do texto do calendário */
+  input::-webkit-datetime-edit {
+    color: #333;
+  }
+
+  .datapicker{
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 70vh; 
+margin-top: 350px;
+background-color: #001420;
+color: white;
+padding-top: 20px;
+  }
+
+  .criarconta{
+    padding-top: 250px;
+    padding-bottom: 50px;
+  }
+
+  .imagemcarrosel{
+ border-radius: 30px;
+ border: #0067a0 2px solid;
+  }
+
+  .agendamento{
+    width: 80vw;
+    background-color: #020608de;
+    margin: 50px 0 30px 0 ;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-x:scroll;
+    white-space: nowrap;
+    flex-direction: column
+  }
+ .paineis {
+    display: flex; /* Transforma a seção em um container flexbox */
+    justify-content: space-around; /* Distribui as divs igualmente no espaço disponível */
+  }
+  .painel{
+    background-color: #05304bb6;
+    height: 80vh;
+    width: 45vw;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+
+  .funcionario {
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #061722a9;
+    border-radius: 20px;
+  }
+  
+  .horario {
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: rgb(2, 113, 63);
+  }
+  
+  .ocupado {
+    background-color: rgb(68, 0, 0);
+    cursor: not-allowed;
+  }
+
+
+  
+  

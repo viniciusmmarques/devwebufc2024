@@ -16,6 +16,7 @@ font-family: 'Bebas Neue', sans-serif;
     border: white 1px solid;
     border-radius: 18px;
     width: 100px;
+    margin: 5px;
 }
 
 .botaonavbarsair{
@@ -27,9 +28,11 @@ font-family: 'Bebas Neue', sans-serif;
 }
 .carousel {
     position: relative;
-    width: 50vw;
-    height:50vh;
-    
+    width: 100vw;
+    height:100vh;
+    border-radius: 500px;
+
+
 }
 
 .slide {
@@ -42,6 +45,9 @@ font-family: 'Bebas Neue', sans-serif;
     transition: opacity 2s ease-in-out; 
     padding-bottom: 50px;
 
+
+    
+
 }
 
 .slide.active {
@@ -50,20 +56,21 @@ font-family: 'Bebas Neue', sans-serif;
 
 .prev, .next {
     position: absolute;
-    top: 50%;
+    top: 150%;
     transform: translateY(-50%);  
 
-    background: #0e020240;
+    background: #01000040;
     padding: 10px;
     cursor: pointer;
+
 }
 
 .prev {
-    left: 20px;
+    left: 50px;
 }
 
 .next {
-    right: 20px;
+    right: 50px;
 }
 .centered-section {
     text-align: center;
@@ -73,6 +80,7 @@ font-family: 'Bebas Neue', sans-serif;
   align-items: center;
   height: 40vh; 
   margin-top: 50px;
+  
   }
 
   /* Altera a fonte do calendário */
@@ -91,7 +99,10 @@ input::-webkit-calendar-picker-indicator {
 justify-content: center;
 align-items: center;
 height: 70vh; 
-margin-top: 20px;
+margin-top: 350px;
+background-color: #01426a;
+color: white;
+padding-top: 20px;
   }
 
   .criarconta{
@@ -132,16 +143,23 @@ margin-top: 20px;
     width: calc(100% / 3 - 20px);
     margin: 10px;
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 15px;
+    background-color: #285d7ea9;
+    border-radius: 20px;
   }
   
   .horario {
     display: block;
     margin-bottom: 5px;
     padding: 5px;
-    background-color: rgb(12, 255, 146);
+    background-color: rgb(3, 154, 86);
   }
   
   .ocupado {
-    background-color: lightcoral;
+    background-color: rgb(246, 29, 29);
+    cursor: not-allowed;
   }
+
+
+  
+  

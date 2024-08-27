@@ -1,46 +1,204 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>E-Salão</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Salão</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style4.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
 </head>
+
 <body>
-    <header class="bgnavbar">
-        <nav class="navbar navbar-expand-lg no-margin d-flex justify-content-between">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo" width="150px" height="50px"></a>
-            <span >Cliente</span> 
-            <ul class="navbar-nav ms-auto d-flex align-items-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="logar.html"><button class="btn btn-danger botaonavbarsair">sair</button></a>
-              </li>
-              
-              <li class="nav-item">
-                <button id="toggle-dark-mode" class="btn btn-secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
-                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
-                    </svg></i>
-                </button>
-             </li>
-            </ul>
-          </div>
-          
-        </nav>
-    </header>
-    
+  <header class="bgnavbar">
+    <nav class="navbar navbar-expand-lg no-margin">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="logo.png" alt="logo" width="150px" height="50px"></a>
+        <ul class="navbar-nav ms-auto d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="logar.html"><button
+                class="btn btn-danger botaonavbarsair">sair</button></a>
+          </li>
+
+          <li class="nav-item">
+            <button id="toggle-dark-mode" class="btn btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+              </svg></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="container-fluid">
     <section class="paineis">
-      <div class="painel">Conteúdo da primeira div</div>
-      <div class="painel">Conteúdo da segunda div</div>
+      <div class="painel">
+        <div class="form">
+          <form action="#">
+            <div class="form-header">
+              <div class="tittle">
+                <h1>Cadastro de horários</h1>
+              </div>
+            </div>
+            <div class="imput-group">
+              <div class="imput-box">
+                <label for="funcionario-cliente">Funcionário</label>
+                <select class="form-select" id="funcionario-cliente" aria-label="Default select example">
+                  <option selected>Selecione um funcionário</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="imput-box">
+                <label for="txtData">Data: </label>
+                <input type="date" id="txtData" name="data">
+
+              </div>
+
+              <div class="imput-box">
+                <label for="txtHora">Horário: </label>
+                <input type="time" id="txtHora" name="hora">
+
+              </div>
+
+              <div class="imput-box">
+                <label for="servicos">Selecione o serviço</label>
+                <select class="form-select" id="servicos" aria-label="Default select example">
+                  <option selected>Selecione um Serviço</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Detalhes: </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+
+              <div class="confirm-button">
+                <button><a href="#">Confirmar horário</a></button>
+              </div>
+
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+
+      <div class="painel">
+        <div class="tittle">
+          <h4>Agendamentos ativos</h4>
+        </div>
+        <div class="responsive-table">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Dia</th>
+                <th scope="col">Hora</th>
+                <th scope="col">funcionário</th>
+                <th scope="col">Cancelar</th>
+                <th scope="col">Editar </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>10/10/2024</td>
+                <td>10:00</td>
+                <td>Júlia</td>
+                <td>
+                  <img src="lixeira.png" alt="lixeira" width="25px" height="25px">
+                </td>
+                <td>
+                  <img src="editar.png" alt="editar" width="25px" height="25px">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>13/10/2024</td>
+                <td>12:00</td>
+                <td>Mateus</td>
+                <td>
+                  <img src="lixeira.png" alt="lixeira" width="25px" height="25px">
+                </td>
+                <td>
+                  <img src="editar.png" alt="editar" width="25px" height="25px">
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>16/10/2024</td>
+                <td>20:00</td>
+                <td>Júlia</td>
+                <td>
+                  <img src="lixeira.png" alt="lixeira" width="25px" height="25px">
+                </td>
+                <td>
+                  <img src="editar.png" alt="editar" width="25px" height="25px">
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tittle">
+          <h4>Histórico</h4>
+        </div>
+        <div class="responsive-table">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Dia</th>
+                <th scope="col">Hora</th>
+                <th scope="col">funcionário</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td data-label="Dia"="">10/10/2024</td>
+                <td data-label="Hora">10:00</td>
+                <td data-label="Funcionário">Júlia</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td data-label="Dia">13/10/2024</td>
+                <td data-label="Hora">12:00</td>
+                <td data-label="Funcionário">Mateus</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td data-label="Dia">16/10/2024</td>
+                <td data-label="Hora">20:00</td>
+                <td data-label="Funcionário">Júlia</td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
     </section>
 
-    
-   <script src="script.js"></script>
+  </div>
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>

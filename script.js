@@ -25,19 +25,4 @@ nextButton.addEventListener('click', () => {
   showSlide(slideIndex + 1);
 });
 
-// Modo not
-const toggleDarkModeButton = document.getElementById('toggle-dark-mode');
 
-// Function to toggle between light and dark mode
-function toggleDarkMode() {
-  const body = document.body;
-  const navbar = document.querySelector('.navbar');
-  const buttons = document.querySelectorAll('.btn'); // Select all buttons
-  const background = document.querySelectorAll('.body')  
-  body.classList.toggle('dark-mode'); // Toggle dark mode class on body
-  navbar.classList.toggle('bg-dark'); // Toggle navbar background color
-  background.classList.toggle('background-color:red;'); 
-  buttons.forEach(button => button.classList.toggle('btn-light')); // Toggle button styles
-}
-
-toggleDarkModeButton.addEventListener('click', toggleDarkMode);

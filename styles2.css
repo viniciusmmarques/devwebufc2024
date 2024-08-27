@@ -19,6 +19,18 @@ color: white;
     margin: 5px;
 }
 
+.botaonavbar:hover{
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: rgb(0, 0, 0) 1px solid;
+  border-radius: 18px;
+  width: 100px;
+  margin: 5px;
+}
+
+
+
+
 .botaonavbarsair{
     background-color: rgb(157, 14, 14);
     color: white;
@@ -31,8 +43,6 @@ color: white;
     width: 100vw;
     height:100vh;
     border-radius: 500px;
-
-
 }
 
 .slide {
@@ -44,10 +54,6 @@ color: white;
     opacity: 0;
     transition: opacity 2s ease-in-out; 
     padding-bottom: 50px;
-
-
-    
-
 }
 
 .slide.active {
@@ -112,7 +118,7 @@ padding-top: 20px;
 
   .imagemcarrosel{
  border-radius: 30px;
- border: #0067a0 2px solid;
+ border: #ffffff 3px solid;
   }
 
   .agendamento{
@@ -162,4 +168,8 @@ padding-top: 20px;
 
 
   
-  
+.cartaologarcriar{
+  background-color: #061722a9;
+  color:white;
+  border: white 1px solid;
+}

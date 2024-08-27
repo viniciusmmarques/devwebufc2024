@@ -12,11 +12,24 @@ font-family: 'Bebas Neue', sans-serif;
 
 .botaonavbar{
     background-color: #0067a0;
+    text-align: center;
     color: white;
     border: white 1px solid;
     border-radius: 18px;
     width: 100px;
     margin: 5px;
+}
+.botaonavbar button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.botaonavbar button a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .botaonavbarsair{
@@ -127,16 +140,16 @@ padding-top: 20px;
     white-space: nowrap;
     flex-direction: column
   }
- .paineis {
-    display: flex; /* Transforma a seção em um container flexbox */
-    justify-content: space-around; /* Distribui as divs igualmente no espaço disponível */
+  .paineis {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
-  .painel{
-    background-color: #05304bb6;
-    height: 80vh;
-    width: 45vw;
-    margin-top: 20px;
-    border-radius: 15px;
+  .painel {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
   }
 
   .funcionario {
@@ -160,207 +173,164 @@ padding-top: 20px;
     cursor: not-allowed;
   }
 
-  /* Reset básico para margens e preenchimentos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
   
-  /* Corpo da página */
-  body {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #333;
-  }
   
-  /* Cabeçalho da navegação */
-  header {
-    background-color: #f8f9fa;
-    padding: 10px 0;
-  }
   
-  .bgnavbar {
-    background-color: #343a40;
-  }
+
+/* Títulos */
+.tittle h1, .tittle h4 {
+  color: #333;
+}
+
+/* Container principal */
+.container-fluid-cad {
+  padding: 20px;
+}
+
+
+/* Formulários */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.imput-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.imput-box {
+  display: flex;
+  flex-direction: column;
   
-  .navbar-brand img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .navbar-nav {
-    margin-left: auto;
-  }
-  
-  .nav-link {
-    color: #fff;
-  }
-  
-  /* Títulos */
-  .tittle h1, .tittle h4 {
-    color: #333;
-  }
-  
-  /* Container principal */
-  .container-fluid {
-    padding: 20px;
-  }
-  
-  /* Painéis */
+}
+
+.form-select, .form-control, .btn {
+  border-radius: 5px;
+}
+
+.confirm-button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.confirm-button button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.confirm-button button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Tabelas */
+.responsive-table {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table thead {
+  background-color: #f4f4f4;
+}
+
+.table th, .table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f9f9f9;
+}
+
+.table th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.table th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table img {
+  cursor: pointer;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
   .paineis {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .painel {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 20px;
-  }
-  
-  /* Formulários */
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .imput-group {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .imput-box {
-    display: flex;
     flex-direction: column;
   }
-  
-  .form-select, .form-control, .btn {
-    border-radius: 5px;
-  }
-  
-  .confirm-button {
-    text-align: center;
-  }
-  
-  .confirm-button button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .confirm-button button a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Tabelas */
-  .responsive-table {
-    overflow-x: auto;
-  }
-  
-  .table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
+
   .table thead {
-    background-color: #f4f4f4;
+    display: none;
   }
-  
-  .table th, .table td {
-    padding: 10px;
-    text-align: left;
+
+  .table tr {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .table td {
+    display: block;
+    text-align: right;
+    position: relative;
+    padding-left: 50%;
+    border: none;
     border-bottom: 1px solid #ddd;
   }
-  
-  .table th {
-    background-color: #f9f9f9;
+
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: left;
+    white-space: nowrap;
   }
-  
-  .table th:first-child {
-    border-top-left-radius: 10px;
+}
+@media (max-width: 576px) {
+  .navbar-brand img {
+    max-width: 120px;
+    height: auto;
   }
-  
-  .table th:last-child {
-    border-top-right-radius: 10px;
+
+
+  .botaonavbar button {
+    padding: 8px 15px;
   }
-  
-  .table tbody tr:last-child td:first-child {
-    border-bottom-left-radius: 10px;
-  }
-  
-  .table tbody tr:last-child td:last-child {
-    border-bottom-right-radius: 10px;
-  }
-  
-  .table tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  .table tbody tr:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .table img {
-    cursor: pointer;
-  }
-  
-  /* Responsividade para telas menores */
-  @media (max-width: 768px) {
-    .paineis {
-      flex-direction: column;
-    }
-  
-    .table thead {
-      display: none;
-    }
-  
-    .table tr {
-      display: block;
-      margin-bottom: 10px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
-  
-    .table td {
-      display: block;
-      text-align: right;
-      position: relative;
-      padding-left: 50%;
-      border: none;
-      border-bottom: 1px solid #ddd;
-    }
-  
-    .table td::before {
-      content: attr(data-label);
-      position: absolute;
-      left: 0;
-      width: 50%;
-      padding-left: 10px;
-      font-weight: bold;
-      text-align: left;
-      white-space: nowrap;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .navbar-brand img {
-      max-width: 120px;
-      height: auto;
-    }
-  
-    .confirm-button button {
-      padding: 8px 15px;
-    }
-  }
-  
+}
